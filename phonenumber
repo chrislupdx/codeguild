@@ -1,0 +1,5 @@
+numba= (input('Enter a phone number'))
+first = numba[0:3]
+second = numba[3:6]
+third = numba[6:12]
+print('Your phone number is ({})-{} - {}'.format(first, second, third))

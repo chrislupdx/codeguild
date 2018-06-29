@@ -1,0 +1,23 @@
+# Tricks+conventionsself.
+# Constants
+# GRAVITY = 9.68 (BC it never changes, but that's just convention, in Js there are declarative that is enforced, where in python they're not)
+# exp:
+#     GRAVITY = 6.68
+#     GRAVITY = 6.69 (in Py, you can change constants, in Js, you can't re-assign stuff based on type?)
+# Variables are snake_case_because_of_the_undercores (and remain so)
+# CamelCase (there's a Js version of camelCase (firstSecondThird))
+#     in Py CamelCase, it is a class
+# There are a few others but that's just it for python
+#
+# numbers are allowed later, (in Js underscore renders stuff private aka cannot be accessed out of themselves)
+# Variables cannot begin with symbols or integers (underscore allowed)
+#     if you see an underscore at the start of a thing that means you have to be inside to access it (in py this is simply a convention)
+
+a = 1
+b = 2
+a, b = b, a
+print(a)
+print(b)
+#this above swaps the values, not all programming langauges can do this)
+
+a, b = 1 , 2 (tuple unpacking, you can re-assign stuff positionally) http://openbookproject.net/thinkcs/python/english3e/tuples.html

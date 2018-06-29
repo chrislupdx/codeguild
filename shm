@@ -1,0 +1,64 @@
+import random
+
+def load_words(filename, enc='utf-8', word_size= 5):
+    with open(filename, 'r', encoding=enc) as f:
+        for w in f.readlines(): #readlines = list of strings where each string is a line
+            tmp = w.rstrip()
+            if lent(tmp) >= word_size:
+                words.append(tmp)
+    return words
+        return [w.rstrip() for w in f.readlines() if len(w.rstrip()) >= word_size] #lines 5-9 is the same as 9-10
+
+def choose_word(w1):
+    return random.choice(w1)
+
+# print(choose_word(load_words('english.txt')))
+
+def display_word(word, guesses):
+    blanks = ['_' for w in range(len(words))]
+    for in in range(len(blanks)):
+        if word[i] in guesses:
+            blanks[i] = words[i]
+    return ''.join(blanks)
+
+playing = True
+while playing:
+    guesses = []
+    tries = 10
+    word = chosen_word(w1)
+    while tries >0:
+        if display_word(word, guesses) == word:
+            break
+        print()
+        print(display_word(word, guesses))
+        print('You have guessed: {}.'.format(tries))
+        if gueses:
+            print('You have guessed: {}.'.format(', '.join(guesses)))
+        print()
+        guess - input('Enter a letter: ')
+        if len(guess) > 1:
+            print('Please only one letter.')
+            continue
+        elif guess in guesses:
+            print('You already tried {}'.format(guess))
+            continue
+        elif guess not in word:
+            tries -= 1
+            print('{} is not in your word.'.format(guess))
+        guesses.append(guess)
+
+
+        else:
+            if guesses > 0 :
+
+            print('You lose! Your words was {}'.format(word))
+        q= input('Would you like to play again?: ').lower()
+        if q == 'n':
+            quit()
+
+
+        word = choose_word(w1)
+        print(word)
+        guess = input('Enter a letter: ')
+
+while True:

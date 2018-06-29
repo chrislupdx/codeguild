@@ -1,0 +1,63 @@
+We have been working with classes and objects the whole time without being told.  string.format is a method of the string class. .upper and .lower are methods.
+
+word count, the .split, .items, all this shit is what you want
+
+We use classes becuase they make a ceWould you send the notes of what I missed over slartain amout of organizational sense.
+
+EXP: bank wants to build bank accounts for people
+  chris = 0
+  tim = 100
+
+instead, we could create a list of tuples
+  [('chris', 100)]
+  if we have a list of tuples, lthan we can make them into lists of dictionaries
+  def check_balance(name):
+
+rather, (function creation is inevitable). so thinking about modeling stuff irl better such as thinking about bank accounts by objects
+class (a constructor)
+  class BankAccount(object): #all objects inherit from a thing called Object
+    def _init_(self, name): #all classes need at least 1 methods #double underscore methods are dunder/magic methods #these belong in python, we're inheriting them from parent object
+      self.name = name
+      self.balance = 0 #self is rather important, its a placeholder
+
+      def _str_(self):
+        return "{}'s Bankaccount".format(self.name)
+
+    def __add__(self, other):
+    def _str_(self):
+      return "BankAccount"
+
+      def deposit(self, amt):
+      self.balance += amout
+      return 'Thank you {}.'.format(self.name, self.balance)
+
+      def withdraw(self, amt):
+        if self.balance - amt >= 0:
+          self.balance -= amt
+          return 'Thank you {}. Your balance is now {}.'.format(self.name, self.balance)
+
+      return 'You do not have enough funds. Your balance is {}'.format(self.balance)
+
+#dunders: are pieces that generally already exist (add, subtract, printing, reper etc), dir(thing) will let you see what can dunder a thing
+
+  chris = BankAccount('Chris') #when a BankAccount() is made the attributes related are imposed upon new ads
+  print(chris.deposit(100))
+  print(chris.withdraw(200))
+  kim = BankAccount('Kim')
+
+print(chris.balance)
+kim(kim.balance)
+print('*'*20)
+kim.balance = 1000
+print(chris.balance)
+print(kim.balance)
+
+class BankAccountPlus(BankAccount): #we're passing the constructor into this new class
+  def _init_(self, n):
+    super()._init)(n) #calling the method of the parent
+
+    def withdraw(self, amt):
+      if self.balance - amt -100  >= 0:
+        self.balance -= amt
+        return 'Thank you {}. Your balance is now {}.'.format(self.name, self.balance)
+      return "you do not have enoug hmoney.  "remember to ekep at least 100 bucks in your accoutn your balance is something")

@@ -1,0 +1,8 @@
+#Strings, functions,l methods
+wods = 'i am words'
+# print(words.capitalize())
+
+# print(name.center(120, '*'))
+#'*'=fill space, where the * is the pretty filler (stars in the spaces)
+
+print(count)

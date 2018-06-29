@@ -1,0 +1,10 @@
+there are a couple of modules for interacting with our OS.
+  import OS
+  import Sys
+
+inside Sys, there's argv
+exp: print.sys.argv
+
+filename = sys.argv[1]
+with open(filename, 'r', encoding='utf-8') a f:
+  print(f.read())
