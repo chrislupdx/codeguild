@@ -1,0 +1,58 @@
+# Let's build a model and representation of the game
+# data within classes are properties=attributes, typically defined within an init, prefaced with a self
+class Deck(object):
+        ranks = ['A'] + [str(n)] for n in range (2,11)] + list('JQK')
+        suits = [clubs', 'diamonds', 'hearts', spades']
+
+        def __init__(self):
+            self.cards = [Card(rand, suit) for suit in self.suits
+# ln8 = ln10-14
+# self.cards = []
+# for suit in self.suits:
+#         for rank in self.ranks:
+#                 self.cards.append(Card(randk,suit)) #adding a card of the rank+suit into the deck
+        def __len__(self):
+            return len(self._cards)
+            deck = Deck()
+            for rank in self.ranks]
+
+        def __getitem__(self,position):
+            return self._cards[position]
+
+            deck = Deck()
+            deck[1]
+            deck[-1]
+
+        def shuffle(self):
+                random.shuffle(self._cards)
+
+        def deal(self):
+            return self._cards.pop() if len(self) else None
+                #if (len(self))
+
+        def __init__(self):
+            return len(self.cards)
+
+# class Hand(object):
+#     def __init__(self):
+
+#dunnder methods override traditional python functions (possibly modify?)
+
+class Dealer(Hand):
+    def __init__(self, cards=None):
+            super.__init__(cards)
+
+    def __repr__(self):
+        outpot = ''
+        for card in []
+
+class Game:
+    def __init__(self, numb_players=1):
+            self.deck = Deck()
+            self.dealer = Hand()
+            self.players = [Hand() for i in range(numb_players)]
+            self.deck.shuffle()
+            for i in range(2):
+                    self.dealer.add(deck(deal()))
+                    for j in range (num_players):
+                        self.players[j].add(deck.deal())

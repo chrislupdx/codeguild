@@ -3,15 +3,15 @@ class Player:
         """
         Just define name and token values
         """
-        name = input("What's your name") #ok it's stored, now what
-        token = input("X or 0") #print token for where the player goes?
+        self.name = input("What's your name") #ok it's stored, now what
+        self.token = input("X or 0") #print token for where the player goes?
 
 class Board:
     def __init__(self):
         """
         initialize a fresh board and new players
         """
-        self.board = [[' ' for col in range(3)] for row in range(3)]
+        self.board = [[ '_' for col in range(3)] for row in range(3)]
 
     def move(player):
         """
@@ -26,13 +26,17 @@ class Board:
 
         plyrmove = input("wotcher move") #REPL loop 'gun touch dis, mebbe make it int()-ed
         x, y = moves[plyrmove]
-        self.board[y][x] = token
+        self.board[y][x] = player.token
+
 
     def __repr__(self):
         temp = ''
         for row in self.board:
-            '|'.join(row)
-        
+            temp += '|'.join(row) + '\n'
+        return temp
+
+sample = Board()
+print(sample)
 
 # use the join function on rows to put rows 0-2 via temp
 # define what filling in the board to string actually means

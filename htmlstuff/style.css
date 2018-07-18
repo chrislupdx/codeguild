@@ -1,0 +1,26 @@
+body {
+background: lightblue;
+}
+
+h6 {
+  color: yellow;
+}
+
+h1 {
+  text-alight: center;
+}
+
+section {
+  background: #c34ab0;
+  width: 100px;
+  hegith: 100px;
+  padding: 10px 20px 30px 40px;
+  box-sizing: border-border-box;;
+  margin: 50px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+div {
+  padding: 20px;
+}
