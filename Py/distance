@@ -1,0 +1,54 @@
+#converesion between mi, km, ft, m,
+# Write a function to convert between mi, km, ft, and m
+#coversion 1 in  and cm
+#conversion 2 gal and L
+distance = float(input('Gimme a distance'))
+unit = input('What unit is it in?')
+goal = input('Desired conversion')
+if unit == 'meter':
+    if goal == 'feet':
+        print('{} feet'.format(distance * 3.28084) )
+    elif goal == 'in':
+        print('{} inches'.format(distance * 39.3701))
+    elif goal == 'mi':
+        print('{} miles'.format(distance * 0.000621371 ))
+    elif goal == 'km':
+        print('{} kilometers'.format(distance * 0.001))
+if unit == 'km':
+    if goal == 'feet':
+        print('{} feet'.format(distance * 3280.84))
+    elif goal == 'in':
+        print('{} inches'.format(distance * 39370.08))
+    elif goal == 'mi':
+        print('{} miles'.format(distance * 0.62137121212121))
+    elif goal == 'meter':
+        print('{} meter'.format(distance * 1000))
+if unit == 'feet':
+    if goal == 'km': #finish conversions through there and rinse+repeat
+        print('{} km'.format(distance * 0.00030480009753600003763))
+    elif goal == 'in':
+        print('{} inches'.format(distance * 12))
+    elif goal == 'mi':
+        print('{} miles'.format(distance * 0.000189394))
+    elif goal == 'meter':
+        print('{} meter'.format(distance * 0.304800097536))
+if unit == 'miles':
+    if goal == 'feet':
+        print('{} feet'.format(distance * 5280.0016896000006454))
+    elif goal == 'in':
+        print('{} inches'.format(distance * 63360.020275200025935))
+    elif goal == 'meter':
+        print('{} meter'.format(distance * 1609.3445149900805973))
+    elif goal == 'km':
+        print('{} kilometers'.format(distance * 1.6093445149900806879))
+
+# elif unit == 'feet':
+#     if goal == 'meter':
+#     result == ('distance' * 0.3048 )
+# print ('distance' 'unit' is 'result' 'goal')
+
+# print(distance * (x))
+#     or if type == 'gal' or 'L'
+# print(distance )
+# print("Converted value is (SOlid) (unit)")
+# (request) * 3.78541))

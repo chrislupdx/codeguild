@@ -1,0 +1,8 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="containiner_div"></div>
+    <script src='./hello_alert.js'></script>
+  <body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+header {
+  text-align: center;
+  font-size: 30px
+}
+
+#zen-summary {
+  display:none;
+}
+
+#zen-intro::before {
+  content:'';
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/7c/1f/c8/7c1fc8309278834200ad7b4b7ca85c44.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+}
+
+#zen-preamble {
+  text-align: center;
+
+}
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  font-family: 'Amatic SC', cursive;
+}
+
+#zen-intro {
+  position: relative;
+}
+
+.supporting p::first-letter {
+  color: red
+
+}
+
+#zen-intro {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/d0/98/bc/d098bc74fe68d594926e962de0ea3a45.png");
+}
+
+[role="complementary"] {
+  border-top-style: dashed;
+}
+
+#design-selection {
+  text-align: center;
+}
+
+#design-archives {
+  text-align: center;
+}
+
+#zen-resources {
+  text-align: center;
+}
+ ul {
+    list-style-type: none;
+    padding: 0;
+}

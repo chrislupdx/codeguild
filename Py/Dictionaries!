@@ -1,0 +1,13 @@
+d = {'key': 'value'}
+d2 = {'key1' : 'value11', 'newkey1' :'newvall1', 'newkey2:'}
+#print(d)
+#print(d[key'])
+# print(d.keys())
+#there's a thing caled tuple unpacking
+
+a, b = [3,7]
+print(a)
+print(b)
+print(a + b)
+#tuple unpacking: it's very very useful, but we ened to know exactly how many values we're pulling apart and getting exactly as many variables as we'd want
+#JSYK dictionaries aren't indexed. 

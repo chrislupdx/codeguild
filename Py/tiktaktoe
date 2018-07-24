@@ -1,0 +1,92 @@
+class Player:
+    def __init__(self, name, token):
+        """
+        Just define name and token values
+        """
+        self.name = input("What's your name") #ok it's stored, now what
+        self.token = input("X or 0") #print token for where the player goes?
+
+class Board:
+    def __init__(self):
+        """
+        initialize a fresh board and new players
+        """
+        self.board = [[ '_' for col in range(3)] for row in range(3)]
+
+    def move(player):
+        """
+        place token at coordinates (x position, y position)
+        """
+        counter = 0 #moves counter, not sure if we wanna count up or down
+#if the counter is not zero, the game lives on
+
+        moves = {1:(0,0), 2:(1,0), 3:(2,0),
+                 4:(0,1), 5:(1,1), 6:(2,1),
+                 7:(0,2), 8:(1,2), 9:(2,2)}
+
+        plyrmove = input("wotcher move") #REPL loop 'gun touch dis, mebbe make it int()-ed
+        x, y = moves[plyrmove]
+        self.board[y][x] = player.token
+
+
+    def __repr__(self):
+        temp = ''
+        for row in self.board:
+            temp += '|'.join(row) + '\n'
+        return temp
+
+sample = Board()
+print(sample)
+
+# use the join function on rows to put rows 0-2 via temp
+# define what filling in the board to string actually means
+# list to string translation here
+
+
+        # while p1_moves or p2_moves:
+        #     if current_player == 1:
+        #         step = p1_moves.pop(0)
+        #         current_player += 1
+        #         board = make_move(token, int(move), board)
+        #         print_board(board)
+        #
+            # elif current_player == 2:
+            #     move = p2_moves.pop(0)
+            #     current_player -= 1
+            #     board = make_move(token2, int(move), board)
+            #     print_board(board)
+#          while True:
+#              try:
+#                  position = int(input("where do you want to go?")).strip())
+#                  move = moves[position]
+#
+#
+#
+# still have to figure out where the keys+values get wired to
+# take player move iponut
+# read coordinates
+# put token on the board
+# if a player goes somewhere with a token (p1 p2 regardless), return input 'invalid move',
+#
+# design move structure/ movelist
+#
+#         playmove = input('')
+#
+#         even p1 odd p2
+#
+#         take in input from player
+#         put in input to Board
+#
+#    def calculate_winner(self):
+#
+#     returns true when game board is full
+#     checks if game is over, returns no more spaces // you/other won!
+# create 1 or 2 player functionality
+# #
+# # build repl
+# #     read
+# #     eval
+# #     play
+# #     loop
+#
+# if 10 moves have occurred check if anybody has won.  if somebody has won, signal this and end the game

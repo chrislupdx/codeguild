@@ -1,0 +1,14 @@
+docstrings= test for code (of input/output of various fucntion and documentation for source code)
+include docstrings under things to describe what they do
+
+using docstrings to test programs! (if you have enough docstrings you'll be able to generate your own documentation!)
+
+doctests
+  >>> function(method)
+expected result
+
+>>>add(5,2)
+7
+
+it doesn't matter where your doctests are!
+python  -m doctest [directory]

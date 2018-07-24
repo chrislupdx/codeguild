@@ -1,0 +1,9 @@
+file io: opening, reading, writing files.
+  w/ typical with->as means(i'll open myself and close myself if something happens)
+    eventually, you'll wanna close said file.
+
+representing table structures in a csv in code (like getting the machine to comprehend this is a table)
+  You could use your own google contacts for phone numbers for this
+
+!! You can import your own modules if you're sharing a directory with something
+  json is useful because it's comprehensible across multiple system (json dumps/loads)

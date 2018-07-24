@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script>
+            alert('put your code here');
+        </script>
+    </head>
+    <body>
+        ...
+        <script>
+            alert('or here');
+        </script>
+    </body>
+</html>

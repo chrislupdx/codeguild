@@ -1,0 +1,53 @@
+import csv
+def write_to_file_(pb): #pb is phonebook, this is just an extension off of the phonebook puzzle
+  with open('phonebook.csv', newline='', encoding='utf-8') as file:
+
+with open('sample.csv', newline ='') as f:
+  fieldnames['name', 'number', 'phrasename']
+
+  writer.writeheader()
+  for i in pb:
+    writer.writerow(pb[i])
+
+  bookreader #var name = csv.reader(f, delimiter=',', )
+    for row in bookreader:
+      print(row)
+
+def load_file():
+  pb = P{}
+  with open('phonebook.csv', newline='', encoding='utf-8') as f:
+    reader = csv.Dictreader(f)
+
+    for row in reader:
+      pb[row['name']] = {
+        'name': row['name'],
+        'number': row['']
+      }
+
+import JSON
+def write_to_file_(pb): #pb is phonebook, this is just an extension off of the phonebook puzzle
+  data = json.dumps(pb) #if youp want to python -> json.dumps into csv, json.loads into csv
+  with open('phonebook.json', 'w', encoding='utf-8') as f:
+    f.write(data)
+
+with open('sample.csv', newline ='') as f:
+  fieldnames['name', 'number', 'phrasename']
+
+  writer.writeheader()
+  for i in pb:
+    writer.writerow(pb[i])
+
+``  bookreader #var name = csv.reader(f, delimiter=',', )
+    for row in bookreader:
+      print(row)
+
+def load_file():
+  pb = P{}
+  with open('phonebook.csv', newline='', encoding='utf-8') as f:
+    reader = csv.Dictreader(f)
+
+    for row in reader:
+      pb[row['name']] = {
+        'name': row['name'],
+        'number': row['']
+      }
