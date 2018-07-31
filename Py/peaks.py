@@ -1,9 +1,14 @@
-where ip is the indexical position of querent, check for n-1 (left) and n+1 (right) in index value
-
+this_dict = [1,2,3,4,5,6,7,6,5,4,5,6,7,8,9,8,7,6,7,8,9]
 peak = []
-Def peaking():
-    if n < index-1
-    elif n >
-    bigger than the one on the right?
-if yes to both, return its index and store it
-print(peaks[])
+for n in range(1,len(this_dict)-1):
+    if this_dict[n] > this_dict[n-1] and this_dict[n] > this_dict[n+1]:
+        peak.append(n)
+        # print(peak)
+valley = []
+for n in range(1,len(this_dict)-1):
+    if this_dict[n] < this_dict[n-1] and this_dict[n] < this_dict[n+1]:
+        valley.append(n)
+        # print(valley)
+
+combined = sorted(valley + peak)
+print(combined)

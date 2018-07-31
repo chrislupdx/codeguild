@@ -1,6 +1,6 @@
 class ATM(object):
     def __init__(self, balance, interest, name):
-        self.balance = 0
+        self.balance = 100000
         self.interest = 0.001
         self.name = 'name'
     def _str_(self):
