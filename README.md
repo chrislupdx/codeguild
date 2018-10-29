@@ -6,22 +6,22 @@
 Coursework in Python and Javascript
 
 Python (programs of note)
--A Hangman game
--Tic Tac Toe game
--Palindrome identifier
--Blackjack 
--ATM simulator
--Connect 4
--Mad Lib generator
--Crude adventure game
--Phone Book with CRUD functionality and JSON+CSV serialization
--Imperial/Metric length converter
--Pig Latin Cipher
+- A Hangman game
+- Tic Tac Toe game
+- Palindrome identifier
+- Blackjack 
+- ATM simulator
+- Connect 4
+- Mad Lib generator
+- Crude adventure game
+- Phone Book with CRUD functionality and JSON+CSV serialization
+- Imperial/Metric length converter
+- Pig Latin Cipher
 
 JavaScript (programs of note)
--Calculator
--Peaks and Valley Calculator
--Rot13/Caesar Cipher
+- Calculator
+- Peaks and Valley Calculator
+- Rot13/Caesar Cipher
 
 ## Technologies Used
 * Javascript
